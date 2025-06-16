@@ -1,0 +1,145 @@
+/* basic css (reset) */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #F2F2F2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  /* available weights: 400, 700 & 400 italic */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+figcaption {
+  font-size:.75rem;
+  font-style: italic;
+  color: #424242;
+  letter-spacing: 1px;
+}
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+section {
+  padding: 90px 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  color: #193549;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 30px;
+}
+
+@media(min-width: 768px) {
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+}
+
+
+/* global style ended above */
+/* header navigation menu */
+header {
+  background-color: #FF7601;
+}
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+nav .logo-container {
+  max-width: 130px;
+}
+@media (min-width: 768px) {
+  nav .logo-container {
+    max-width: 250px;
+  }
+}
+nav .logo-container a img {
+  margin: 15px 5px;
+}
+nav .navigation-container {
+  width: 100%;
+}
+nav .navigation-container ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .navigation-container ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav .navigation-container ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-style: italic;
+  color: #FFFFFF;
+  padding: 10px 5px;
+  transition: all 0.9s ease-out;
+}
+@media (min-width: 768px) {
+  nav .navigation-container ul li a {
+    font-size: 1.125rem;
+    padding: 30px 15px;
+  }
+}
+
+nav .navigation-container ul li a:hover {
+  background-color: #37415c;
+  color: #E0413D;
+}
+
+/* footer */
+
+footer .bottombar {
+  padding: 20px 15px;
+  background-color: #070e14;
+  text-align: center;
+  font-style: italic;
+  color: #FFFFFF;
+}
+/* home page - index.html */
+.banner {
+  padding: 90px 15px;
+  text-align: center;
+}
+.banner h1 {
+  animation: changeColors 5s infinite;
+}
+@keyframes changeColors {
+  0%   {color: #FFFFFF;}
+  25%  {color: #d1cdcd;}
+  50%  {color: #aba7a7;}
+  75%  {color: #5e5c5c;}
+  100% {color: #000000;}
+}
+
+
+
+/* About page */
+.about {
+  background-color: #bcbec2;
+}
+
+
